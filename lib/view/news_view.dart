@@ -10,7 +10,7 @@ import 'package:shimmer/shimmer.dart';
 import 'package:news_app/widgets/topic_selection.dart';
 import 'package:news_app/widgets/headlines_carousel.dart';
 import 'package:news_app/widgets/sort_filter_menu.dart';
-import 'package:lottie/lottie.dart'; // Import Lottie
+import 'package:lottie/lottie.dart'; 
 
 class NewsView extends StatelessWidget {
   final NewsViewModel controller = Get.put(
@@ -29,7 +29,7 @@ class NewsView extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                // Header section with search and sort
+                // Header section
                 Row(
                   children: [
                     Expanded(
@@ -76,7 +76,7 @@ class NewsView extends StatelessWidget {
                 const TopicSelection(),
                 const SizedBox(height: 24),
 
-                // News articles with empty state Lottie animation
+                // Empty State
                 Obx(() {
                   if (controller.isLoading.value) {
                     return _buildShimmerEffect();
@@ -114,7 +114,7 @@ class NewsView extends StatelessWidget {
                           final removedArticle = filteredArticles[index];
                           controller.articles.remove(removedArticle);
 
-                          // Show undo option
+                          // Undo
                           ScaffoldMessenger.of(context).showSnackBar(
                             SnackBar(
                               content: const Text("Article removed"),

@@ -58,7 +58,7 @@ class SearchView extends StatelessWidget {
               Expanded(
                 child: Obx(() {
                   if (controller.searchQuery.value.isEmpty) {
-                    // Show search history when not searching
+                    
                     return Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
@@ -84,7 +84,7 @@ class SearchView extends StatelessWidget {
                     );
                   }
 
-                  // Show search results
+                  // search results
                   final filteredArticles =
                       controller.articles.where((article) {
                         final searchable = [

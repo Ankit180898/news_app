@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 
 class MyThemesModel {
   // Common Colors
-  static const Color primaryColor = Color(0xFF1A73E8); // Google Blue
-  static const Color accentColor = Color(0xFF4285F4); // Slightly lighter blue
+  static const Color primaryColor = Color(0xFF1A73E8); 
+  static const Color accentColor = Color(0xFF4285F4); 
 
   // Light Theme
   static final ThemeData lightTheme = ThemeData(

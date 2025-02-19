@@ -92,7 +92,7 @@ class ArticleDetailView extends StatelessWidget {
                           ),
                     ),
                   ),
-                  // Gradient overlay for better text readability
+
                   Container(
                     decoration: BoxDecoration(
                       gradient: LinearGradient(
