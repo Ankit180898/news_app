@@ -113,7 +113,7 @@ class SortFilterMenu extends StatelessWidget {
                   Icon(
                     Icons.star,
                     color:
-                        controller.currentSortOption.value == SortOption.title
+                        controller.currentSortOption.value == SortOption.popularity
                             ? Theme.of(context).primaryColor
                             : Colors.grey,
                     size: 20,
